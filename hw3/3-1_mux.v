@@ -1,4 +1,4 @@
-module mux_32(A, B, C, D, E, S);
+module mux_31(A, B, C, D, E, S);
 
 input [1:0] A, B, C, S;
 output [1:0] D, E;
