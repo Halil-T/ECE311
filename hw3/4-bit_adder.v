@@ -5,7 +5,7 @@ input [0:0] Cin;
 output [3:0] Sum;
 output [0:0] Cout;
 
-wire C1, C2, C3;
+wire [0:0] C1, C2, C3;
 
 fullAdder_dataflow FA0(.A(A[0]), .B(B[0]), .Cin(Cin), .Cout(C1), .sum(Sum[0]));
 fullAdder_dataflow FA1(.A(A[1]), .B(B[1]), .Cin(C1), .Cout(C2), .sum(Sum[1]));
