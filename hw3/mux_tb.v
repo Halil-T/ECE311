@@ -4,7 +4,9 @@ reg[1:0] p, q;
 reg[0:0] s;
 wire[1:0] out;
 
-mux_behavioral mg(.A(p), .B(q), .C(out), .S(s));
+//mux_gates mg(.A(p), .B(q), .C(out), .S(s));
+mux_dataflow mg(.A(p), .B(q), .C(out), .S(s));
+//mux_behavioral mg(.A(p), .B(q), .C(out), .S(s));
 
 always @(out) begin
     $display("A = %b B = %b S = %b out = %b", p, q, s, out);
