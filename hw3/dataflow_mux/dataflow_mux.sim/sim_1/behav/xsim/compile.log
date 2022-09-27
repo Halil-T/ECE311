@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/hw3/2-1_mux_dataflow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_dataflow
+INFO: [VRFC 10-2263] Analyzing Verilog file "/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/hw3/mux_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_tb

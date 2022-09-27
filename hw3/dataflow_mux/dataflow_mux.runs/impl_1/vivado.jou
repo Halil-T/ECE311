@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Sep 27 13:51:33 2022
+# Process ID: 17695
+# Current directory: /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/hw3/dataflow_mux/dataflow_mux.runs/impl_1
+# Command line: vivado -log mux_dataflow.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mux_dataflow.tcl -notrace
+# Log file: /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/hw3/dataflow_mux/dataflow_mux.runs/impl_1/mux_dataflow.vdi
+# Journal file: /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/hw3/dataflow_mux/dataflow_mux.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source mux_dataflow.tcl -notrace
