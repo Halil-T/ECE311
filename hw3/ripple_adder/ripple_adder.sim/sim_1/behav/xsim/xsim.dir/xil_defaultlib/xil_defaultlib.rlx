@@ -1,0 +1,8 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/hw3/4-bit_adder.v,1664325324,verilog,,/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/hw3/fullAdder.v,,ripple_adder,,,,,,,,
+/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/hw3/addertb.v,1664325369,verilog,,,,addertb,,,,,,,,
+/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/hw3/fullAdder.v,1664325508,verilog,,/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/hw3/addertb.v,,fullAdder,,,,,,,,
+/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/hw3/ripple_adder/ripple_adder.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,

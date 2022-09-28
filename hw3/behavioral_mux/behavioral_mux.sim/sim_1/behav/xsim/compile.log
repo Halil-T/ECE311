@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/hw3/2-1_mux_behavioral.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_behavioral
+INFO: [VRFC 10-2263] Analyzing Verilog file "/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/hw3/mux_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/hw3/behavioral_mux/behavioral_mux.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
