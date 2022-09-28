@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Tue Sep 27 11:56:52 2022
+| Date         : Tue Sep 27 20:42:55 2022
 | Host         : micro07 running 64-bit Debian GNU/Linux 10 (buster)
 | Command      : report_drc -file mux_gates_drc_opted.rpt -pb mux_gates_drc_opted.pb -rpx mux_gates_drc_opted.rpx
 | Design       : mux_gates
