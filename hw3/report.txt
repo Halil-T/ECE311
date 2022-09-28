@@ -1,0 +1,6 @@
+In this weeks assignment we observed the differneces between a look ahead carry adder and a ripple carry adder. 
+In the testbench it was clear that when doing some operations, for example: 2 + 11. 
+There are points where the output changes to 9 isntead of 13 for a couple of nanoseconds.
+We also know that the carry look ahead adder should be noticably faster than the ripple carry adder. 
+However, because of how vivado synthesizes the logic it actually ends up giving the same look up table when implementing it.
+So when you look at the schematic for both verisions of the adder they look identical.
