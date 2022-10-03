@@ -1,0 +1,10 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+A = 00 B = 00 S = 0 out = 00
+A = 01 B = 01 S = 0 out = 01
+A = 11 B = 00 S = 0 out = 00
+A = 10 B = 11 S = 0 out = 11
+A = 10 B = 11 S = 1 out = 10
+A = 01 B = 11 S = 1 out = 01
+A = 11 B = 00 S = 1 out = 11
+A = 10 B = 11 S = 1 out = 10

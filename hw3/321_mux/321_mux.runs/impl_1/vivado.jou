@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Sep 27 21:07:28 2022
+# Process ID: 2946
+# Current directory: /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/hw3/321_mux/321_mux.runs/impl_1
+# Command line: vivado -log mux_31.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mux_31.tcl -notrace
+# Log file: /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/hw3/321_mux/321_mux.runs/impl_1/mux_31.vdi
+# Journal file: /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/hw3/321_mux/321_mux.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source mux_31.tcl -notrace
