@@ -1,0 +1,3 @@
+The multiplier we implemented was essentially a look up table.
+All you need to do to create it is to make a truth table out of the inputs which would be the address of the ROM.
+And the outputs which is the data stored at the specific address of the ROM.
