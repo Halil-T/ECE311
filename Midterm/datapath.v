@@ -12,11 +12,11 @@ wire [31:0] atr, btr, A, B, SignImm;
 wire [31:0] SrcA, SrcB, ALUResult, ALUOut;
 wire [31:0] A3, data, WD3;
 
-flopr #(32) pcreg(clk, PCEn, pcnext, pcout);
+flopen #(32) pcreg(clk, PCEn, pcnext, pcout);
 mux2 #(32) dadddr(.d0(pcout), .d1(ALUOut), .s(IorD), .y(addr));
 
 memory mem(.clk(clk), .dout(dataout), .we(MemWrite), .addr(addr), .din(B));
-flopr #(32) Istor(.clk(clk), .d(dataout), q(instruction));
+flopen #(32) Istor(.clk(clk), .en(IRWrite), .d(dataout), q(instruction));
 flopr #(32) datareg(clk, dataout, data);
 
 mux2 regDst(instruction[20:16], instruction[15:11], RegDst, A3);
