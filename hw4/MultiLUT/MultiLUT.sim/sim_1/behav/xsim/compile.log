@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/hw4/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiLUT
+INFO: [VRFC 10-2263] Analyzing Verilog file "/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/hw4/romtb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module romtb

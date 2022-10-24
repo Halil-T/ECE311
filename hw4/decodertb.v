@@ -12,11 +12,11 @@ end
 
 initial begin
     in = 0;
-    #3;
+    #5;
 
-    for(i = 0; i < 9; i = i + 1) begin
+    for(i = 0; i < 8; i = i + 1) begin
         in = i;
-        #3;
+        #5;
     end
 end
 
