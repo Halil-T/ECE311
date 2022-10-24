@@ -1,0 +1,15 @@
+addi
+add
+subi
+sub
+and
+or
+xor
+nor
+nand
+lsl
+lw
+sw
+beq
+no op
+jump
