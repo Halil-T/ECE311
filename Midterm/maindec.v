@@ -1,8 +1,8 @@
 module maindec(clk, op, IorD, MemWrite, 
                IRWrite, RegDst, MemtoReg, RegWrite,
-               ALUSrcA, ALUSrcB, PCSrc, ALUOp, PCWrite, Branch);
+               ALUSrcA, ALUSrcB, PCSrc, ALUOp, PCWrite, Branch, reset);
 
-input [0:0] clk;
+input [0:0] clk, reset;
 input [5:0] op;
 output [0:0] IorD, MemWrite, IRWrite, RegDst, MemtoReg, RegWrite, ALUSrcA, PCWrite, Branch;
 output [1:0] PCSrc, ALUOp, ALUSrcB;
@@ -10,7 +10,11 @@ output [1:0] PCSrc, ALUOp, ALUSrcB;
 reg [3:0] current_state;
 reg [3:0] next_state;
 
-always @(posedge clk) begin
+always @(posedge clk or reset) begin
+
+    if(reset)
+        current_state = 4'h0;
+    
     case(current_state)
         4'h0:
         begin

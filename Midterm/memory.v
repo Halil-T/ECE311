@@ -10,10 +10,10 @@ initial begin
     $readmemh("memfile.mem", RAM);
 end
 
-assign dout = RAM[addr[31:2]]; //supposedly word aligned, dont quite get it
+assign dout = RAM[addr[7:2]];
 
 always @(posedge clk)
     if(we)
-        RAM[addr[31:2]] <= din;
+        RAM[addr[7:2]] <= din;
 
 endmodule

@@ -27,8 +27,8 @@ module alu(
            ALU_Result = ~(A | B);
           3'b110: // Logical nand 
            ALU_Result = ~(A & B);
-          3'b111: // LSL
-           ALU_Result = A<<B;
+          3'b111: // SLT
+           ALU_Result = A<B;
           default: ALU_Result = A + B; 
         endcase
     end

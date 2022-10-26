@@ -1,9 +1,10 @@
-module datapath(clk, PCEn, IorD, MemWrite, IRWrite, RegDst, MemtoReg, RegWrite, ALUSrcA, ALUSrcB, ALUControl, zeroFlag, PCSrc);
+module datapath(clk, PCEn, IorD, MemWrite, IRWrite, RegDst, MemtoReg, RegWrite, ALUSrcA, ALUSrcB, ALUControl, zeroFlag, PCSrc, ins_out);
 
 input [0:0] clk, PCEn, IorD, MemWrite, IRWrite, RegDst, MemtoReg, RegWrite, ALUSrcA, PCSrc;
 input [1:0] ALUSrcB;
 input [2:0] ALUControl;
 output [0:0] zeroFlag;
+output [31:0] ins_out;
 
 wire [31:0] pcnext, pc, pcout;
 wire [31:0] dataout, instruction;
@@ -11,6 +12,8 @@ wire [31:0] addr;
 wire [31:0] atr, btr, A, B, SignImm;
 wire [31:0] SrcA, SrcB, ALUResult, ALUOut;
 wire [31:0] A3, data, WD3;
+
+assign ins_out = instruction;
 
 flopen #(32) pcreg(clk, PCEn, pcnext, pcout);
 mux2 #(32) dadddr(.d0(pcout), .d1(ALUOut), .s(IorD), .y(addr));
