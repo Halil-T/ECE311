@@ -9,6 +9,9 @@ output [1:0] PCSrc, ALUOp, ALUSrcB;
 
 reg [3:0] current_state;
 reg [3:0] next_state;
+reg [14:0] controls;
+
+assign {IorD, MemWrite, IRWrite, RegDst, MemtoReg, RegWrite, ALUSrcA, PCWrite, Branch, PCSrc, ALUOp, ALUSrcB} = controls;
 
 always @(posedge clk or reset) begin
 
@@ -18,21 +21,13 @@ always @(posedge clk or reset) begin
     case(current_state)
         4'h0:
         begin
-            IorD <= 1'b0;
-            ALUSrcA <= 1'b0;
-            ALUSrcB <= 2'b01;
-            ALUOp <= 2'b00;
-            PCSrc <= 2'b00;
-            IRWrite <= 1'b0;
-            PCWrite <= 1'b0;
+            controls <= 14'b000000000000001;
             next_state <= 4'h1;
         end
         4'h1:
         begin
-            ALUSrcA <= 0;
-            ALUSrcB <= 2'b11;
+            controls <= 14'b000000000000011;
             ALUOp <= 2'b00;
-
             case(op)
                 6'b000000: next_state <= 4'h6; //R-type
                 6'b100011: next_state <= 4'h2; //LW
@@ -45,9 +40,7 @@ always @(posedge clk or reset) begin
         end
         4'h2:
         begin
-            ALUSrcA <= 1'b1;
-            ALUSrcB <= 2'b10;
-            ALUOp <= 2'b00;
+            controls <= 14'b000000100000010;
             case(op)
                 6'b100011: next_state <= 4'h3; //LW
                 6'b100011: next_state <= 4'h6; //SW
@@ -56,62 +49,47 @@ always @(posedge clk or reset) begin
         end
         4'h3: 
         begin   
-            IorD <= 1'b1;
+            controls <= 14'b100000100000010;
             next_state <= 4'h4;
         end
         4'h4: 
         begin
-            RegDst <= 1'b0;
-            MemtoReg <= 1'b1;
-            RegWrite <= 1'b1;
+            controls <= 14'b100011100000010;
             next_state <= 4'h0;
         end
         4'h5:
         begin
-            IorD <= 1'b1;
-            MemWrite <= 1'b1;
+            controls <= 14'b110000100000010;
             next_state <= 4'h0;
         end
         4'h6:
         begin 
-            ALUSrcA <= 1'b1;
-            ALUSrcB <= 2'b00;
-            ALUOp <= 2'b10;
+            controls <= 14'b000000100001000;
             next_state <= 4'h7;
         end
         4'h7:
         begin 
-            RegDst <= 1'b1;
-            MemtoReg <= 1'b0;
+            controls <= 14'b000100100001000;
             next_state <= 4'h0;
         end
         4'h8: 
         begin
-            ALUSrcA <= 1'b1;
-            ALUSrcB = 2'b00;
-            ALUOp <= 2'b01;
-            PCSrc <= 2'b01;
-            Branch <= 1'b1;
+            controls <= 14'b000000101010100;
             next_state <= 4'h0;
         end
         4'h9: 
         begin 
-            ALUSrcA <= 1'b1;
-            ALUSrcB <= 2'b10;
-            ALUOp <= 2'b00;
+            controls <= 14'b000000100000010;
             next_state <= 4'ha;
         end
         4'ha: 
         begin 
-            RegDst <= 1'b0;
-            MemtoReg <= 1'b0;
-            RegWrite <= 1'b0;
+            controls <= 14'b000000100000010;
             next_state <= 4'h0;
         end
         4'hb: 
         begin  
-            PCSrc <= 2'b10;
-            PCWrite <= 1'b1;
+            controls <= 14'b000000010100011;
             next_state <= 4'h0;
         end
         default: next_state <= 4'h0;
