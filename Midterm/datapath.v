@@ -1,28 +1,28 @@
 module datapath(clk, PCEn, IorD, MemWrite, IRWrite, RegDst, MemtoReg, RegWrite, ALUSrcA, 
-                ALUSrcB, ALUControl, zeroFlag, PCSrc, ins_out);
+                ALUSrcB, ALUControl, zeroFlag, PCSrc, ins_out, addr, din, rd);
 
 input [0:0] clk, PCEn, IorD, MemWrite, IRWrite, RegDst, MemtoReg, RegWrite, ALUSrcA;
 input [1:0] ALUSrcB, PCSrc;
 input [2:0] ALUControl;
+input [31:0] rd;
+
 output [0:0] zeroFlag;
-output [31:0] ins_out;
+output [31:0] addr, din;
+
 
 wire [31:0] pcnext, pc, pcout;
-wire [31:0] dataout, instruction;
-wire [31:0] addr;
+wire [31:0] instruction;
 wire [31:0] atr, btr, A, B, SignImm;
 wire [31:0] SrcA, SrcB, ALUResult, ALUOut;
 wire [31:0] data, WD3;
 wire [4:0] A3;
 
-assign ins_out = dataout;
 
 flopen #(32) pcreg(clk, PCEn, pcnext, pcout);
 mux2 #(32) dadddr(.d0(pcout), .d1(ALUOut), .s(IorD), .y(addr));
 
-memory mem(.clk(clk), .dout(dataout), .we(MemWrite), .addr(addr), .din(B));
-flopen #(32) Istor(.clk(clk), .en(IRWrite), .d(dataout), .q(instruction));
-flopr #(32) datareg(clk, 1'b0,dataout, data);
+flopen #(32) Istor(.clk(clk), .en(IRWrite), .d(rd), .q(instruction));
+flopr #(32) datareg(clk, 1'b0, rd, data);
 
 mux2 #(5) regDst(instruction[20:16], instruction[15:11], RegDst, A3);
 mux2 #(32) mtr(ALUOut, data, MemtoReg, WD3);
