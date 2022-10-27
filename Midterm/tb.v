@@ -2,7 +2,6 @@ module testbench();
 reg clk;
 reg reset;
 wire [31:0] instruction;
-wire memwrite;
 // instantiate device to be tested
 mips cpu(clk, reset, instruction);
 // initialize test

@@ -1,10 +1,13 @@
-module srcbmux(d0, d2, d3, s, out);
+module srcbmux(d0, d2, d3, s, dout);
 
-input [31:0] d0, d1, d2;
+input [31:0] d0, d2, d3;
 input [1:0] s;
-output [31:0] out;
+output [31:0] dout;
 
-always @(d0 or d1 or d2 or s) begin
+reg [31:0] out;
+assign dout = out;
+
+always @(d0 or d2 or d3 or s) begin
     case(s)
         2'b00:
             out = d0;

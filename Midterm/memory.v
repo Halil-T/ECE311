@@ -1,6 +1,6 @@
-module memory(clk, dout, we, addr, din)
+module memory(clk, dout, we, addr, din);
 
-input [31:0] addr;
+input [31:0] addr, din;
 input [0:0] clk, we;
 output [31:0] dout;
 
