@@ -8,7 +8,7 @@ module alu(
     wire [32:0] tmp;
     assign ALU_Out = ALU_Result; // ALU out
     assign tmp = {1'b0,A} + {1'b0,B};
-    assign Zero = (A-B == 0) ? 1 : 0;
+    assign Zero = A==B ? 1 : 0;
 
     always @(*)
     begin
