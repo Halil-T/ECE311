@@ -1,0 +1,21 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/Single_cycle_CPU/Single_cycle_CPU.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/adder.v,1666662613,verilog,,/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/alu.v,,adder,,,,,,,,
+/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/alu.v,1666667847,verilog,,/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/aludec_single.v,,alu,,,,,,,,
+/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/aludec_single.v,1666666372,verilog,,/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/controller_single.v,,aludec,,,,,,,,
+/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/controller_single.v,1666668591,verilog,,/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/dmem.v,,controller,,,,,,,,
+/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/dmem.v,1666664110,verilog,,/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/dpath.v,,dmem,,,,,,,,
+/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/dpath.v,1666662613,verilog,,/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/ffr.v,,datapath,,,,,,,,
+/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/ffr.v,1666662613,verilog,,/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/imem.v,,flopr,,,,,,,,
+/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/imem.v,1666664746,verilog,,/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/maindec_single.v,,imem,,,,,,,,
+/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/maindec_single.v,1666662613,verilog,,/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/mips_single.v,,maindec,,,,,,,,
+/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/mips_single.v,1666668391,verilog,,/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/mux2.v,,mips,,,,,,,,
+/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/mux2.v,1666662613,verilog,,/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/regfile.v,,mux2,,,,,,,,
+/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/regfile.v,1666662722,verilog,,/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/signext.v,,regfile,,,,,,,,
+/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/signext.v,1666662613,verilog,,/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/sl2.v,,signext,,,,,,,,
+/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/single_tb.v,1666668455,verilog,,,,testbench,,,,,,,,
+/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/sl2.v,1666662613,verilog,,/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/top_single.v,,sl2,,,,,,,,
+/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/top_single.v,1666668438,verilog,,/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/single_tb.v,,top,,,,,,,,

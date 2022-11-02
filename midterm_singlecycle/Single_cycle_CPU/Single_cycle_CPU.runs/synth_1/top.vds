@@ -1,0 +1,393 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Oct 24 23:35:57 2022
+# Process ID: 21757
+# Current directory: /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/Single_cycle_CPU/Single_cycle_CPU.runs/synth_1
+# Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/Single_cycle_CPU/Single_cycle_CPU.runs/synth_1/top.vds
+# Journal file: /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/Single_cycle_CPU/Single_cycle_CPU.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21846 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1446.090 ; gain = 81.539 ; free physical = 7163 ; free virtual = 25809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/top_single.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mips' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/mips_single.v:1]
+INFO: [Synth 8-6157] synthesizing module 'controller' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/controller_single.v:1]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/maindec_single.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (1#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/maindec_single.v:1]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/aludec_single.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (2#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/aludec_single.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (3#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/controller_single.v:1]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/dpath.v:1]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/ffr.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (4#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/ffr.v:1]
+INFO: [Synth 8-6157] synthesizing module 'adder' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (5#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/adder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sl2' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/sl2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'sl2' (6#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/sl2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/mux2.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (7#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/regfile.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (8#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/regfile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/mux2.v:1]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (8#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'signext' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/signext.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (9#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/signext.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/alu.v:1]
+INFO: [Synth 8-226] default block is never used [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/alu.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (10#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/alu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (11#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/dpath.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (12#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/mips_single.v:1]
+INFO: [Synth 8-6157] synthesizing module 'imem' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/imem.v:1]
+INFO: [Synth 8-3876] $readmem data file 'memfile.mem' is read successfully [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/imem.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (13#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/imem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/dmem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (14#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/dmem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (15#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/top_single.v:1]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[31]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[30]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[29]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[28]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[27]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[26]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[25]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[24]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[23]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[22]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[21]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[20]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[19]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[18]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[17]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[16]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[15]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[14]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[13]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[12]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[11]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[10]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[9]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[8]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[1]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[0]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[0]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1498.840 ; gain = 134.289 ; free physical = 7174 ; free virtual = 25820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1504.777 ; gain = 140.227 ; free physical = 7164 ; free virtual = 25810
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1512.781 ; gain = 148.230 ; free physical = 7163 ; free virtual = 25810
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-5546] ROM "RAM" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1521.688 ; gain = 157.137 ; free physical = 7094 ; free virtual = 25741
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	  19 Input     32 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module maindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input      7 Bit        Muxes := 1     
+Module aludec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 1     
+Module flopr 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+Module imem 
+Detailed RTL Component Info : 
++---Muxes : 
+	  19 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1680.961 ; gain = 316.410 ; free physical = 6861 ; free virtual = 25519
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives      | 
++------------+-------------------+-----------+----------------------+-----------------+
+|top         | dmem/RAM_reg      | Implied   | 64 x 32              | RAM64X1S x 32   | 
+|top         | mips/dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 12     | 
++------------+-------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1680.961 ; gain = 316.410 ; free physical = 6863 ; free virtual = 25521
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives      | 
++------------+-------------------+-----------+----------------------+-----------------+
+|top         | dmem/RAM_reg      | Implied   | 64 x 32              | RAM64X1S x 32   | 
+|top         | mips/dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 12     | 
++------------+-------------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.961 ; gain = 316.410 ; free physical = 6862 ; free virtual = 25520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.961 ; gain = 316.410 ; free physical = 6861 ; free virtual = 25519
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.961 ; gain = 316.410 ; free physical = 6861 ; free virtual = 25519
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.961 ; gain = 316.410 ; free physical = 6861 ; free virtual = 25519
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.961 ; gain = 316.410 ; free physical = 6861 ; free virtual = 25519
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.961 ; gain = 316.410 ; free physical = 6861 ; free virtual = 25519
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.961 ; gain = 316.410 ; free physical = 6861 ; free virtual = 25519
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    27|
+|3     |LUT1     |     1|
+|4     |LUT3     |    54|
+|5     |LUT4     |     8|
+|6     |LUT5     |   181|
+|7     |LUT6     |   114|
+|8     |RAM32M   |    12|
+|9     |RAM64X1S |    32|
+|10    |FDCE     |     6|
+|11    |IBUF     |     2|
+|12    |OBUF     |    98|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------+---------+------+
+|      |Instance     |Module   |Cells |
++------+-------------+---------+------+
+|1     |top          |         |   536|
+|2     |  dmem       |dmem     |    33|
+|3     |  mips       |mips     |   402|
+|4     |    dp       |datapath |   402|
+|5     |      alu    |alu      |    23|
+|6     |      pcadd1 |adder    |     2|
+|7     |      pcadd2 |adder_0  |     2|
+|8     |      pcreg  |flopr    |   363|
+|9     |      rf     |regfile  |    12|
++------+-------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.961 ; gain = 316.410 ; free physical = 6861 ; free virtual = 25519
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 35 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.961 ; gain = 316.410 ; free physical = 6865 ; free virtual = 25523
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.969 ; gain = 316.410 ; free physical = 6879 ; free virtual = 25537
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 71 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1805.707 ; gain = 0.000 ; free physical = 6782 ; free virtual = 25440
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 44 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1805.707 ; gain = 441.305 ; free physical = 6851 ; free virtual = 25509
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1805.707 ; gain = 0.000 ; free physical = 6851 ; free virtual = 25509
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/Single_cycle_CPU/Single_cycle_CPU.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 24 23:36:13 2022...

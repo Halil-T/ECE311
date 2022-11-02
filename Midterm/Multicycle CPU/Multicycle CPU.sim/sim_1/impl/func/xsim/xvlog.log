@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/Multicycle CPU/Multicycle CPU.sim/sim_1/impl/func/xsim/testbench_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-311] analyzing module flopen
+INFO: [VRFC 10-311] analyzing module flopen_3
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-311] analyzing module flopr_0
+INFO: [VRFC 10-311] analyzing module flopr_1
+INFO: [VRFC 10-311] analyzing module flopr_2
+INFO: [VRFC 10-311] analyzing module maindec
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-311] analyzing module mux3
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench

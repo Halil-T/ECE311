@@ -1,0 +1,441 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Oct 31 10:22:49 2022
+# Process ID: 30646
+# Current directory: /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/Multicycle CPU/Multicycle CPU.runs/synth_1
+# Command line: vivado -log mips.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mips.tcl
+# Log file: /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/Multicycle CPU/Multicycle CPU.runs/synth_1/mips.vds
+# Journal file: /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/Multicycle CPU/Multicycle CPU.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source mips.tcl -notrace
+Command: synth_design -top mips -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 30680 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1445.277 ; gain = 80.570 ; free physical = 2842 ; free virtual = 21866
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mips' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/mips.v:1]
+INFO: [Synth 8-6157] synthesizing module 'memory' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/memory.v:1]
+INFO: [Synth 8-3876] $readmem data file 'memfile.mem' is read successfully [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/memory.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'memory' (1#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/memory.v:1]
+INFO: [Synth 8-6157] synthesizing module 'control' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/maindec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (2#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/maindec.v:1]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/aludec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (3#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/aludec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'control' (4#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/datapath.v:1]
+INFO: [Synth 8-6157] synthesizing module 'flopen' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/ffen.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopen' (5#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/ffen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/mux.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (6#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/mux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/ff.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (7#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/ff.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/mux.v:1]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (7#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/mux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/register.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (8#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/register.v:1]
+INFO: [Synth 8-6157] synthesizing module 'srcbmux' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/srcbmux.v:1]
+INFO: [Synth 8-226] default block is never used [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/srcbmux.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'srcbmux' (9#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/srcbmux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'signext' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/signextend.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (10#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/signextend.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/alu.v:1]
+INFO: [Synth 8-226] default block is never used [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/alu.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (11#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/Multicycle CPU/Multicycle CPU.srcs/sources_1/new/mux3.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (12#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/Multicycle CPU/Multicycle CPU.srcs/sources_1/new/mux3.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (13#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/datapath.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (14#1) [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/mips.v:1]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[31]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[30]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[29]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[28]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[27]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[26]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[25]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[24]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[23]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[22]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[21]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[20]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[19]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[18]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[17]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[16]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[15]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[14]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[13]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[12]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[11]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[10]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[9]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[8]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[1]
+WARNING: [Synth 8-3331] design memory has unconnected port addr[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1499.027 ; gain = 134.320 ; free physical = 2848 ; free virtual = 21873
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1501.996 ; gain = 137.289 ; free physical = 2836 ; free virtual = 21862
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1510.000 ; gain = 145.293 ; free physical = 2836 ; free virtual = 21861
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'maindec'
+INFO: [Synth 8-5544] ROM "controls" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "next_state" is below threshold of ROM address width. It will be mapped to LUTs
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                     000000000001 |                             0000
+                 iSTATE4 |                     000000000010 |                             0001
+                 iSTATE8 |                     000000000100 |                             0110
+                 iSTATE6 |                     000000001000 |                             0111
+                 iSTATE1 |                     000000010000 |                             0010
+                 iSTATE0 |                     000000100000 |                             0011
+                  iSTATE |                     000001000000 |                             0100
+                iSTATE10 |                     000010000000 |                             0101
+                 iSTATE9 |                     000100000000 |                             1000
+                 iSTATE7 |                     001000000000 |                             1001
+                 iSTATE3 |                     010000000000 |                             1010
+                 iSTATE2 |                     100000000000 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'maindec'
+WARNING: [Synth 8-327] inferring latch for variable 'controls_reg' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/maindec.v:18]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1537.891 ; gain = 173.184 ; free physical = 2754 ; free virtual = 21780
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 2     
+	  12 Input     15 Bit        Muxes := 1     
+	  12 Input     12 Bit        Muxes := 1     
+	   7 Input     12 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module maindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	  12 Input     15 Bit        Muxes := 1     
+	  12 Input     12 Bit        Muxes := 1     
+	   7 Input     12 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
+Module aludec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 1     
+Module flopen 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module flopr 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module srcbmux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+Module mux3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "c/md/next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "c/md/next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'c/md/controls_reg[2]' (LD) to 'c/md/controls_reg[6]'
+INFO: [Synth 8-3886] merging instance 'c/md/controls_reg[4]' (LD) to 'c/md/controls_reg[6]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1680.289 ; gain = 315.582 ; free physical = 2596 ; free virtual = 21623
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives      | 
++------------+---------------+-----------+----------------------+-----------------+
+|mips        | d/regs/rf_reg | Implied   | 32 x 32              | RAM32M x 12     | 
+|mips        | mem/RAM_reg   | Implied   | 64 x 32              | RAM64X1S x 32   | 
++------------+---------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1680.289 ; gain = 315.582 ; free physical = 2595 ; free virtual = 21623
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+---------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives      | 
++------------+---------------+-----------+----------------------+-----------------+
+|mips        | d/regs/rf_reg | Implied   | 32 x 32              | RAM32M x 12     | 
+|mips        | mem/RAM_reg   | Implied   | 64 x 32              | RAM64X1S x 32   | 
++------------+---------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'd/regs/rd10__3' (FDRE) to 'd/Istor/q_reg[21]'
+INFO: [Synth 8-3886] merging instance 'd/regs/rd10__2' (FDRE) to 'd/Istor/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'd/regs/rd10__1' (FDRE) to 'd/Istor/q_reg[23]'
+INFO: [Synth 8-3886] merging instance 'd/regs/rd10__0' (FDRE) to 'd/Istor/q_reg[24]'
+INFO: [Synth 8-3886] merging instance 'd/regs/rd10' (FDRE) to 'd/Istor/q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'd/regs/rd20__3' (FDRE) to 'd/Istor/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'd/regs/rd20__2' (FDRE) to 'd/Istor/q_reg[17]'
+INFO: [Synth 8-3886] merging instance 'd/regs/rd20__1' (FDRE) to 'd/Istor/q_reg[18]'
+INFO: [Synth 8-3886] merging instance 'd/regs/rd20__0' (FDRE) to 'd/Istor/q_reg[19]'
+INFO: [Synth 8-3886] merging instance 'd/regs/rd20' (FDRE) to 'd/Istor/q_reg[20]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1680.289 ; gain = 315.582 ; free physical = 2595 ; free virtual = 21623
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.289 ; gain = 315.582 ; free physical = 2595 ; free virtual = 21623
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.289 ; gain = 315.582 ; free physical = 2595 ; free virtual = 21623
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.289 ; gain = 315.582 ; free physical = 2595 ; free virtual = 21623
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.289 ; gain = 315.582 ; free physical = 2595 ; free virtual = 21623
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.289 ; gain = 315.582 ; free physical = 2595 ; free virtual = 21623
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.289 ; gain = 315.582 ; free physical = 2595 ; free virtual = 21623
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    23|
+|3     |LUT2     |     8|
+|4     |LUT3     |    82|
+|5     |LUT4     |    27|
+|6     |LUT5     |    91|
+|7     |LUT6     |   217|
+|8     |MUXF7    |    29|
+|9     |RAM32M   |    12|
+|10    |RAM64X1S |    32|
+|11    |FDCE     |   128|
+|12    |FDRE     |    75|
+|13    |FDSE     |     1|
+|14    |LD       |    13|
+|15    |IBUF     |     2|
+|16    |OBUF     |    36|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------+---------+------+
+|      |Instance    |Module   |Cells |
++------+------------+---------+------+
+|1     |top         |         |   777|
+|2     |  c         |control  |    65|
+|3     |    md      |maindec  |    65|
+|4     |  d         |datapath |   641|
+|5     |    Ab      |flopr    |   158|
+|6     |    Bb      |flopr_0  |    37|
+|7     |    Istor   |flopen   |   273|
+|8     |    alu1    |alu      |    26|
+|9     |    aluout  |flopr_1  |    38|
+|10    |    datareg |flopr_2  |    64|
+|11    |    pcreg   |flopen_3 |    33|
+|12    |    regs    |regfile  |    12|
+|13    |  mem       |memory   |    32|
++------+------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.289 ; gain = 315.582 ; free physical = 2595 ; free virtual = 21623
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.289 ; gain = 315.582 ; free physical = 2595 ; free virtual = 21622
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1680.297 ; gain = 315.582 ; free physical = 2609 ; free virtual = 21636
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 109 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1806.035 ; gain = 0.000 ; free physical = 2530 ; free virtual = 21557
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 57 instances were transformed.
+  LD => LDCE: 13 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1806.035 ; gain = 441.477 ; free physical = 2593 ; free virtual = 21620
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1806.035 ; gain = 0.000 ; free physical = 2593 ; free virtual = 21620
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/Multicycle CPU/Multicycle CPU.runs/synth_1/mips.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mips_utilization_synth.rpt -pb mips_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 31 10:23:04 2022...

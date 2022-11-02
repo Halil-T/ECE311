@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Oct 31 10:22:49 2022
+# Process ID: 30646
+# Current directory: /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/Multicycle CPU/Multicycle CPU.runs/synth_1
+# Command line: vivado -log mips.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mips.tcl
+# Log file: /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/Multicycle CPU/Multicycle CPU.runs/synth_1/mips.vds
+# Journal file: /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/Multicycle CPU/Multicycle CPU.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source mips.tcl -notrace

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Oct 30 23:30:48 2022
+# Process ID: 2920
+# Current directory: /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/Multicycle CPU/Multicycle CPU.sim/sim_1/impl/func/xsim
+# Command line: wbtcv -mode batch -source /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/Multicycle CPU/Multicycle CPU.sim/sim_1/impl/func/xsim/xsim.dir/testbench_func_impl/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/Multicycle CPU/Multicycle CPU.sim/sim_1/impl/func/xsim/webtalk.log
+# Journal file: /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/Multicycle CPU/Multicycle CPU.sim/sim_1/impl/func/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/Multicycle -notrace

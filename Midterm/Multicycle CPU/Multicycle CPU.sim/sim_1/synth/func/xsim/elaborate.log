@@ -1,0 +1,45 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto a5b8bd4f85124e7298a254649fcbcec6 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot testbench_func_synth xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 4 for port 'state' [/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Midterm/tb.v:11]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.FDSE_default
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.latchsre_ldce
+Compiling module unisims_ver.LDCE
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module xil_defaultlib.maindec
+Compiling module xil_defaultlib.control
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.FDCE_default
+Compiling module unisims_ver.MUXF7
+Compiling module xil_defaultlib.flopr
+Compiling module xil_defaultlib.flopr_0
+Compiling module xil_defaultlib.flopen
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.flopr_1
+Compiling module xil_defaultlib.flopr_2
+Compiling module xil_defaultlib.flopen_3
+Compiling module unisims_ver.RAM32M
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.datapath
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.RAM64X1S
+Compiling module xil_defaultlib.memory
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_func_synth

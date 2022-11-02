@@ -1,0 +1,4 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Simulation succeeded
+$stop called at time : 185 ns : File "/afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/midterm_singlecycle/single_tb.v" Line 24
