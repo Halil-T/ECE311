@@ -17,7 +17,7 @@ end
 // generate clock to sequence tests
 always
 begin
-clk <= 1; # 5; clk <= 0; # 5;
+clk <= 1; # 10; clk <= 0; # 10;
 end
 // check results
 always @ (negedge clk)
