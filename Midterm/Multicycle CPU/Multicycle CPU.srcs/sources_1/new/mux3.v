@@ -1,6 +1,3 @@
-
-
-
 module mux3(a, b, c, s, out);
     
 input [31:0] a, b, c;

@@ -11,7 +11,6 @@ reg [31:0] rf[31:0];
 // write third port on rising edge of clock
 // register 0 hardwired to 0
 
-
 always @ (posedge clk) 
 begin
     if (we3) rf[wa3] <= wd3;

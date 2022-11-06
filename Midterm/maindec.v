@@ -1,10 +1,11 @@
-module maindec(clk, op, IorD, MemWrite, 
-               IRWrite, RegDst, MemtoReg, RegWrite,
-               ALUSrcA, ALUSrcB, PCSrc, ALUOp, PCWrite, Branch, reset, state);
+module maindec(clk, op, IorD, MemWrite, IRWrite, RegDst, MemtoReg, 
+               RegWrite, ALUSrcA, ALUSrcB, PCSrc, ALUOp, PCWrite, 
+               Branch, reset, state);
 
 input clk, reset;
 input [5:0] op;
-output [0:0] IorD, MemWrite, IRWrite, RegDst, MemtoReg, RegWrite, ALUSrcA, PCWrite, Branch;
+output [0:0] IorD, MemWrite, IRWrite, RegDst, MemtoReg, RegWrite, 
+            ALUSrcA, PCWrite, Branch;
 output [1:0] PCSrc, ALUOp, ALUSrcB;
 output [3:0] state;
 
@@ -14,15 +15,15 @@ reg [14:0] controls;
 
 assign state = current_state;
 
-
-assign {IorD, MemWrite, IRWrite, RegDst, MemtoReg, RegWrite, ALUSrcA, PCWrite, Branch, PCSrc, ALUOp, ALUSrcB} = controls;
+assign {IorD, MemWrite, IRWrite, RegDst, MemtoReg, RegWrite, ALUSrcA, 
+        PCWrite, Branch, PCSrc, ALUOp, ALUSrcB} = controls;
 
 always @(posedge clk) begin
     if(reset) begin
         current_state <= 4'h0;
     end
     else begin
-    current_state <= next_state;
+        current_state <= next_state;
     end
 end
 
