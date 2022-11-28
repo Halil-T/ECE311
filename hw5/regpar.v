@@ -1,11 +1,13 @@
-module regpar(clk, D, set, reset, Q, shiftEN);
+module regpar(clk, D, set, reset, Q, shiftEN, content);
 
 input [0:0] clk, set, reset. shiftEN;
 input [3:0] D;
 output [0:0] Q;
+output [3:0] content;
 wire [3:0] in, out;
 
 assign Q = out[0];
+assign content = out;
 
 mux2 m3(1'b1, D[3], shiftEN, in[3]);
 reg1 r3(clk, in[3], reset, set, out[3]);
