@@ -1,4 +1,4 @@
-module count(input clk, reset, enable,
+module count(input [0:0] clk, reset, enable,
              output reg [2:0] Q);
 
 always @(posedge clk) begin
