@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1669765856">
+  <File Type="ROUTE-PWR-SUM" Name="reg4_power_summary_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="reg4_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="reg4_drc_routed.rpx"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="reg4_routed_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="reg4_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DCP" Name="reg4_routed.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="reg4_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-ERROR-DCP" Name="reg4_routed_error.dcp"/>
+  <File Type="ROUTE-PWR" Name="reg4_power_routed.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="reg4_physopt.dcp"/>
+  <File Type="ROUTE-DRC-PB" Name="reg4_drc_routed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="reg4_postplace_pwropt.dcp"/>
+  <File Type="ROUTE-DRC" Name="reg4_drc_routed.rpt"/>
+  <File Type="OPT-DRC" Name="reg4_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="reg4_opt.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="reg4_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="reg4_control_sets_placed.rpt"/>
+  <File Type="PA-TCL" Name="reg4.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="reg4_bus_skew_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="reg4_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="reg4_bus_skew_routed.rpx"/>
+  <File Type="OPT-HWDEF" Name="reg4.hwdef"/>
+  <File Type="PLACE-UTIL-PB" Name="reg4_utilization_placed.pb"/>
+  <File Type="BG-BIT" Name="reg4.bit"/>
+  <File Type="ROUTE-STATUS-PB" Name="reg4_route_status.pb"/>
+  <File Type="BG-BIN" Name="reg4.bin"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="reg4_timing_summary_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="reg4.msk"/>
+  <File Type="ROUTE-TIMING-PB" Name="reg4_timing_summary_routed.pb"/>
+  <File Type="BITSTR-RBT" Name="reg4.rbt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="reg4_timing_summary_routed.rpx"/>
+  <File Type="BITSTR-NKY" Name="reg4.nky"/>
+  <File Type="BITSTR-BMM" Name="reg4_bd.bmm"/>
+  <File Type="ROUTE-CLK" Name="reg4_clock_utilization_routed.rpt"/>
+  <File Type="BG-DRC" Name="reg4.drc"/>
+  <File Type="BITSTR-MMI" Name="reg4.mmi"/>
+  <File Type="ROUTE-BUS-SKEW" Name="reg4_bus_skew_routed.rpt"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-BGN" Name="reg4.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="reg4.sysdef"/>
+  <File Type="PLACE-UTIL" Name="reg4_utilization_placed.rpt"/>
+  <File Type="BITSTR-LTX" Name="reg4.ltx"/>
+  <File Type="RDI-RDI" Name="reg4.vdi"/>
+  <File Type="PLACE-IO" Name="reg4_io_placed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="reg4_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="reg4_postroute_physopt.dcp"/>
+  <File Type="ROUTE-STATUS" Name="reg4_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="reg4_power_routed.rpx"/>
+  <File Type="PLACE-DCP" Name="reg4_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="reg4_pwropt.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../Reg4.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="reg4"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/constraints.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

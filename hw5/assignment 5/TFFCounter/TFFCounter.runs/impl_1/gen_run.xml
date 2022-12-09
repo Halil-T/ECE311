@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1669764760">
+  <File Type="ROUTE-PWR-SUM" Name="count8_tff_power_summary_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="count8_tff_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="count8_tff_drc_routed.rpx"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="count8_tff_routed_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="count8_tff_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DCP" Name="count8_tff_routed.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="count8_tff_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-ERROR-DCP" Name="count8_tff_routed_error.dcp"/>
+  <File Type="ROUTE-PWR" Name="count8_tff_power_routed.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="count8_tff_physopt.dcp"/>
+  <File Type="ROUTE-DRC-PB" Name="count8_tff_drc_routed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="count8_tff_postplace_pwropt.dcp"/>
+  <File Type="ROUTE-DRC" Name="count8_tff_drc_routed.rpt"/>
+  <File Type="OPT-DRC" Name="count8_tff_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="count8_tff_opt.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="count8_tff_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="count8_tff_control_sets_placed.rpt"/>
+  <File Type="PA-TCL" Name="count8_tff.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="count8_tff_bus_skew_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="count8_tff_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="count8_tff_bus_skew_routed.rpx"/>
+  <File Type="OPT-HWDEF" Name="count8_tff.hwdef"/>
+  <File Type="PLACE-UTIL-PB" Name="count8_tff_utilization_placed.pb"/>
+  <File Type="BG-BIT" Name="count8_tff.bit"/>
+  <File Type="ROUTE-STATUS-PB" Name="count8_tff_route_status.pb"/>
+  <File Type="BG-BIN" Name="count8_tff.bin"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="count8_tff_timing_summary_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="count8_tff.msk"/>
+  <File Type="ROUTE-TIMING-PB" Name="count8_tff_timing_summary_routed.pb"/>
+  <File Type="BITSTR-RBT" Name="count8_tff.rbt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="count8_tff_timing_summary_routed.rpx"/>
+  <File Type="BITSTR-NKY" Name="count8_tff.nky"/>
+  <File Type="BITSTR-BMM" Name="count8_tff_bd.bmm"/>
+  <File Type="ROUTE-CLK" Name="count8_tff_clock_utilization_routed.rpt"/>
+  <File Type="BG-DRC" Name="count8_tff.drc"/>
+  <File Type="BITSTR-MMI" Name="count8_tff.mmi"/>
+  <File Type="ROUTE-BUS-SKEW" Name="count8_tff_bus_skew_routed.rpt"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-BGN" Name="count8_tff.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="count8_tff.sysdef"/>
+  <File Type="PLACE-UTIL" Name="count8_tff_utilization_placed.rpt"/>
+  <File Type="BITSTR-LTX" Name="count8_tff.ltx"/>
+  <File Type="RDI-RDI" Name="count8_tff.vdi"/>
+  <File Type="PLACE-IO" Name="count8_tff_io_placed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="count8_tff_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="count8_tff_postroute_physopt.dcp"/>
+  <File Type="ROUTE-STATUS" Name="count8_tff_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="count8_tff_power_routed.rpx"/>
+  <File Type="PLACE-DCP" Name="count8_tff_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="count8_tff_pwropt.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../Tff.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Count8_Tff.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="count8_tff"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/constraints.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
