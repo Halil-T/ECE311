@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_v_tc_0_0/sim/design_1_v_tc_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_rst_clk_wiz_0_148M_1/sim/design_1_rst_clk_wiz_0_148M_1.vhd" \
+
+nosort

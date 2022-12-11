@@ -1,0 +1,6 @@
+17:01:28 INFO  : Registering command handlers for SDK TCF services
+17:01:29 INFO  : Launching XSCT server: xsct -n -interactive /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Final_Project/Final_Project.sdk/temp_xsdb_launch_script.tcl
+17:01:31 INFO  : XSCT server has started successfully.
+17:01:32 INFO  : Successfully done setting XSCT server connection channel  
+17:01:32 INFO  : Successfully done setting SDK workspace  
+17:01:32 INFO  : Processing command line option -hwspec /afs/ee.cooper.edu/user/h/halil.turan/Documents/ECE311/Final_Project/Final_Project.sdk/design_1_wrapper.hdf.
